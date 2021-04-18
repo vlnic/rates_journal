@@ -1,12 +1,12 @@
 package com.example.ratesjournal.model;
 
-public class Rate {
+public class RateData {
 
     protected Currency f;
 
     protected Currency s;
 
-    public Rate(Currency f, Currency s) {
+    public RateData(Currency f, Currency s) {
         this.f = f;
         this.s = s;
     }

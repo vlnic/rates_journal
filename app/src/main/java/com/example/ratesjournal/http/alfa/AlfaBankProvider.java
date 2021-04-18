@@ -2,7 +2,7 @@ package com.example.ratesjournal.http.alfa;
 
 import com.example.ratesjournal.http.BankProviderInterface;
 import com.example.ratesjournal.model.Currency;
-import com.example.ratesjournal.model.Rate;
+import com.example.ratesjournal.model.RateData;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -17,9 +17,9 @@ public class AlfaBankProvider implements BankProviderInterface {
     }
 
     @Override
-    public ArrayList<Rate> loadRates() {
-        ArrayList<Rate> rates = new ArrayList<Rate>();
-        rates.add(new Rate(new Currency("RUB", 41.45), new Currency("USD", 56.78)));
+    public ArrayList<RateData> loadRates() {
+        ArrayList<RateData> rates = new ArrayList<RateData>();
+        rates.add(new RateData(new Currency("RUB", 41.45), new Currency("USD", 56.78)));
         return rates;
     }
 

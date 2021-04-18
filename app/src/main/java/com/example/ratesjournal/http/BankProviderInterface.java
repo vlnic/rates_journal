@@ -1,10 +1,10 @@
 package com.example.ratesjournal.http;
 
-import com.example.ratesjournal.model.Rate;
+import com.example.ratesjournal.model.RateData;
 
 import java.util.ArrayList;
 
 public interface BankProviderInterface {
 
-    ArrayList<Rate> loadRates();
+    ArrayList<RateData> loadRates();
 }
