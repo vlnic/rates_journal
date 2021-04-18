@@ -2,22 +2,22 @@ package com.example.ratesjournal.model;
 
 public class RateData {
 
-    protected Currency f;
+    protected Currency buyRate;
 
-    protected Currency s;
+    protected Currency sellRate;
 
-    public RateData(Currency f, Currency s) {
-        this.f = f;
-        this.s = s;
+    public RateData(Currency buyRate, Currency sellRate) {
+        this.buyRate = buyRate;
+        this.sellRate = sellRate;
     }
 
     public String getPairName()
     {
-        return System.out.printf("%s %s", f.getCode(), s.getCode()).toString();
+        return System.out.printf("%s %s", buyRate.getCode(), sellRate.getCode()).toString();
     }
 
     public String getPairValue()
     {
-        return System.out.printf("%f %f", f.getValue(), s.getValue()).toString();
+        return System.out.printf("%f %f", buyRate.getValue(), sellRate.getValue()).toString();
     }
 }
