@@ -6,9 +6,9 @@ public class Bank {
 
     protected String name;
 
-    protected ArrayList<Rate> rates;
+    protected ArrayList<RateData> rates;
 
-    public Bank(String name, ArrayList<Rate> rates) {
+    public Bank(String name, ArrayList<RateData> rates) {
         this.name = name;
         this.rates = rates;
     }
@@ -17,7 +17,7 @@ public class Bank {
         return this.name;
     }
 
-    public ArrayList<Rate> getRates() {
+    public ArrayList<RateData> getRates() {
         return this.rates;
     }
 }

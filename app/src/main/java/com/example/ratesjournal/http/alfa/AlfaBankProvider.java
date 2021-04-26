@@ -29,6 +29,5 @@ public class AlfaBankProvider implements BankProviderInterface {
                 .baseUrl(this.host)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-
     }
 }
