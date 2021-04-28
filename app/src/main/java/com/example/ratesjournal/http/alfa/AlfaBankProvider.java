@@ -19,7 +19,7 @@ public class AlfaBankProvider implements BankProviderInterface {
     @Override
     public ArrayList<RateData> loadRates() {
         ArrayList<RateData> rates = new ArrayList<RateData>();
-        rates.add(new RateData(new Currency("RUB", 41.45), new Currency("USD", 56.78)));
+        rates.add(new RateData(new Currency("RUB", 41.67), new Currency("USD", 56.78)));
         return rates;
     }
 

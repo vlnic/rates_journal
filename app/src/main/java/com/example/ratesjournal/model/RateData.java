@@ -9,6 +9,7 @@ public class RateData {
     public RateData(Currency buyRate, Currency sellRate) {
         this.buyRate = buyRate;
         this.sellRate = sellRate;
+
     }
 
     public String getPairName()
