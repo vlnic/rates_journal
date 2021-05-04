@@ -1,12 +1,11 @@
-package com.example.ratesjournal.http.alfa;
+package com.example.ratesjournal.http.alfa.json;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.Date;
 
-public class AlfaRate {
-
+public class Rates {
     @SerializedName("sellRate")
     @Expose
     private double sellRate;
@@ -35,7 +34,7 @@ public class AlfaRate {
         return this.sellRate;
     }
 
-    public AlfaRate setSellRate(double sellRate) {
+    public Rates setSellRate(double sellRate) {
         this.sellRate = sellRate;
         return this;
     }
@@ -44,7 +43,7 @@ public class AlfaRate {
         return this.buyRate;
     }
 
-    public AlfaRate setBuyRate(double buyRate) {
+    public Rates setBuyRate(double buyRate) {
         this.buyRate = buyRate;
         return this;
     }
@@ -53,7 +52,7 @@ public class AlfaRate {
         return this.buyIso;
     }
 
-    public AlfaRate setBuyIso(String buyIso) {
+    public Rates setBuyIso(String buyIso) {
         this.buyIso = buyIso;
         return this;
     }
@@ -62,7 +61,7 @@ public class AlfaRate {
         return this.sellIso;
     }
 
-    public AlfaRate setSellIso(String sellIso) {
+    public Rates setSellIso(String sellIso) {
         this.sellIso = sellIso;
         return this;
     }
@@ -71,8 +70,16 @@ public class AlfaRate {
         return this.buyCode;
     }
 
-    public AlfaRate setBuyCode(int buyCode) {
+    public Rates setBuyCode(int buyCode) {
         this.buyCode = buyCode;
         return this;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 }

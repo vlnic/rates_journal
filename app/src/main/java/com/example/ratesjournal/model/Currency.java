@@ -1,6 +1,6 @@
 package com.example.ratesjournal.model;
 
-public class Currency {
+public class Currency implements Entity {
 
     protected String code;
 
@@ -17,5 +17,13 @@ public class Currency {
 
     public double getValue() {
         return this.value;
+    }
+
+    public static String tableSchema() {
+        return "CREATE TABLE " + Currency.tableName() + " (id INT PRIMARY KEY AUTO INCREMENT, code TEXT, bank INT);";
+    }
+
+    public static String tableName() {
+        return "currencies";
     }
 }
