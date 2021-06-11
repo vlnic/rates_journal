@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">RatesJournal</string>
+    <string name="subtitle_main">Общий баланс вкладов</string>
+    <string name="summary_balance_value">12 425, 12$</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

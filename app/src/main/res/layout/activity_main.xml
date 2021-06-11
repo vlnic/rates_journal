@@ -8,27 +8,53 @@
         tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/header"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:theme="@style/Theme.RatesJournal.AppBarOverlay">
+            android:theme="@style/Theme.RatesJournal.AppBarOverlay"
+            android:padding="0dp">
 
-        <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                app:popupTheme="@style/Theme.RatesJournal.PopupOverlay"/>
+
+        <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/purple_400"
+        >
+            <TextView android:id="@+id/title"
+                      android:text="@string/app_name"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:textAlignment="center"
+                      android:textColor="@color/white"
+                      android:padding="30dp"
+                      style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+
+            <TextView
+                    android:id="@+id/action_bar_subtitle"
+                    android:text="@string/subtitle_main"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:padding="20dp"
+                    android:layout_centerHorizontal="true"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/summary_balance_value"
+                      android:layout_below="@id/action_bar_subtitle"
+                      android:layout_centerHorizontal="true"
+                      style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            />
+
+        </RelativeLayout>
+
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_main"/>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_margin="@dimen/fab_margin"
-            app:srcCompat="@android:drawable/ic_dialog_email"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
